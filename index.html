@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="https://media.gettyimages.com/id/1062477498/photo/neymar-da-silva-santos-jnior-of-brazil-celebrates-with-teammates-after-scoring-the-opening.jpg?s=612x612&w=0&k=20&c=9EcFUqLwg-Ph2i1WT5Tbt6Qjpz-LPARadR92GktrenM=" /></div>
+          <div class="swiper-slide"><img src="https://media.gettyimages.com/id/1327175087/photo/neymar-jr-celebrates-with-teammates-after-the-first-goal-of-his-team-scored-by-lucas-paqueta.jpg?s=612x612&w=0&k=20&c=CzJ0XaM0gO5jSxNBqUl2RNO2eVCsDTP0RcNZqY113a0=" /></div>
+          <div class="swiper-slide"><img src="https://media.gettyimages.com/id/1428093242/photo/neymar-of-brazil-celebrates-after-scoring-their-sides-third-goal-from-the-penalty-spot-during.jpg?s=612x612&w=0&k=20&c=DbY9_MY8F71ribXyu2d6QT_tzxVxzznMiJ1RnwxQzlI=" /></div>
+        </div>
+
+        <div class="swiper-pagination"></div>
+
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <script>
+      const swiper = new Swiper(".swiper", {
+        loop: true,
+
+        pagination: {
+          el: ".swiper-pagination",
+        },
+
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+  </body>
+</html>
